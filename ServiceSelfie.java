@@ -38,7 +38,7 @@ public class ServiceSelfie extends Activity{
     public static String reportid;
     private FrameLayout cameraPreviewLayout;
     private ImageView capturedImageHolder;
-    public static String uploadUrl = "http://kaypee.fistreet.in/AndroidUITest/op_upload_selfie.php";
+    public static String uploadUrl = "http://webservice_url/......../op_upload_selfie.php";
     ProgressDialog dialog;
     private int serverResponseCode = 0;
 
