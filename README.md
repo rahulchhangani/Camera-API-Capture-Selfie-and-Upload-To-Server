@@ -4,7 +4,7 @@ Camera API to capture selfie, and upload it to the server
 Create package name AdapterClasses
 Copy class name ImageSurfaceView.java
 
-ServiceSelfie.java class used to create selfie api
+ServiceSelfie.java class used to capture selfie api
 (url variable can be your any url)
 Note captured selfie first saved to your sdcard then upload it to server on your button click
 
