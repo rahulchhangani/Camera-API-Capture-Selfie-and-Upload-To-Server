@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/camera_preview">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/camera_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:padding="5dp"
+            android:text="Capture"
+            android:textColor="#ffffff"
+            android:background="#800000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:padding="5dp"
+            android:text="Upload"
+            android:textColor="#ffffff"
+            android:background="#800000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/camera_capture"
+            android:layout_toRightOf="@+id/camera_capture"
+            android:layout_toEndOf="@+id/camera_capture"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/contiue_to_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:padding="5dp"
+            android:text="Next"
+            android:textColor="#ffffff"
+            android:background="#800000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/button_upload"
+            android:layout_toRightOf="@+id/button_upload"
+            android:layout_toEndOf="@+id/button_upload" />
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/captured_image"
+        android:layout_below="@+id/buttonset"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/desc" />
+
+</RelativeLayout>
